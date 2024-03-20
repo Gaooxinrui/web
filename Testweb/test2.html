@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script>
-    // 年龄计算
+        // 年龄计算
         // var year = prompt('请输入您的出生年份');
         // var age = 2024 - parseInt(year);
         // alert('您今年已经' + age +'岁了');
         // console.log(0.1+0.2); // 结果：0.30000000000000004
         // console.log( 2 <> 3); //Uncaught SyntaxError: Unexpected token '>'
-    // 生成三角形⭐
+        // 生成三角形⭐
         // var str = '';
         // for(var i = 1;i<=5;i++){
         //     for (var j=i;j<=5;j++ ){
@@ -22,7 +24,7 @@
         //     str += '\n';
         // }
         // console.log(str);
-    // 生成99乘法表
+        // 生成99乘法表
         // var str = '';
         // for(var i = 1;i<=9;i++){
         //     for(var j=1;j<=i;j++){
@@ -31,6 +33,18 @@
         //     str+="\n";
         // }
         // console.log(str);
+
+        var n = 0;
+        for (var i = 100; i < 1000; i++) {
+            a = i % 10;  //个位
+            b = parseInt(i / 10) % 10; // 十位
+            c = parseInt(i / 100);   // 百位
+            if ((a * a * a + b * b * b + c * c * c) == i);
+            n++;
+        }
+
+        console.log("100 - 1000的水仙花数一共有：" + n + "个");
     </script>
 </body>
+
 </html>
