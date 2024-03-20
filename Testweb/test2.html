@@ -39,8 +39,11 @@
             a = i % 10;  //个位
             b = parseInt(i / 10) % 10; // 十位
             c = parseInt(i / 100);   // 百位
-            if ((a * a * a + b * b * b + c * c * c) == i);
-            n++;
+            if ((a * a * a + b * b * b + c * c * c) == i){
+                console.log("100-1000的水仙花数时："+i);
+                n++;
+
+            }
         }
 
         console.log("100 - 1000的水仙花数一共有：" + n + "个");
