@@ -6,11 +6,39 @@
     <title>Document</title>
 </head>
 <body>
-    <script type="text/javascript">
-        function show(){
-            console.log("hello world");
+    <!-- <script type="text/javascript">
+        // js中有预解器
+        // 可以先调用再声明
+        // function show(){
+        //     console.log("hello world");
+        // }
+        // show();
+        if (isNaN(num1)){
+           
         }
-        show();
+        function getSum(num1,num2){
+            var sum = 0;
+            for(var i = num1;i<num2;i++){
+                sum +=i;
+            }
+            console.log(sum);
+        }
+       
+        getSum("1","5");
+        
+    </script> -->
+    <script>
+        // 求100-200之间所有能被3整除的数字之和
+        var result = 0;
+        num1=prompt();
+        num2=prompt();
+        for (var i = num1; i <= num2; i++) {
+            if (i % 3 == 0) {
+                result += i;
+            }
+        }
+        console.log(result);
+        
     </script>
 </body>
 </html>
